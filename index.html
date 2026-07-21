@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>포트폴리오 | 임베디드 시스템 엔지니어</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="grain-bg"></div>
+
+  <!-- 상단 바 -->
+  <div class="topbar">
+    <div class="chip-mark">
+      <span class="chip-icon"></span>EMBEDDED_DEV.SYS
+    </div>
+    <div class="topbar-status">
+      <span class="led-dot"></span>SYSTEM READY
+    </div>
+  </div>
+
+  <!-- 데스크톱 네비게이션 -->
+  <nav class="pin-nav" id="pinNav">
+    <ul class="pin-nav-list">
+      <li class="pin-item"><a class="pin-link" href="#intro"><span class="pin-addr">0x00</span>메인 소개</a></li>
+      <li class="pin-item"><a class="pin-link" href="#skills"><span class="pin-addr">0x01</span>보유 기술</a></li>
+      <li class="pin-item"><a class="pin-link" href="#projects"><span class="pin-addr">0x02</span>프로젝트 목록</a></li>
+      <li class="pin-item"><a class="pin-link" href="#proj-tomato"><span class="pin-addr">0x03</span>P1. 자동 수확 로봇</a></li>
+      <li class="pin-item"><a class="pin-link" href="#proj-lidar"><span class="pin-addr">0x04</span>P2. LiDAR 자율주행</a></li>
+      <li class="pin-item"><a class="pin-link" href="#proj-doghouse"><span class="pin-addr">0x05</span>P3. 스마트 강아지집</a></li>
+      <li class="pin-item"><a class="pin-link" href="#learned"><span class="pin-addr">0x06</span>배운 점</a></li>
+    </ul>
+  </nav>
+
+  <!-- 모바일 네비게이션 -->
+  <div class="pin-nav-mobile" id="pinNavMobile">
+    <a href="#intro">0x00 소개</a>
+    <a href="#skills">0x01 기술</a>
+    <a href="#projects">0x02 목록</a>
+    <a href="#proj-tomato">0x03 수확로봇</a>
+    <a href="#proj-lidar">0x04 자율주행</a>
+    <a href="#proj-doghouse">0x05 강아지집</a>
+    <a href="#learned">0x06 배운점</a>
+  </div>
+
+  <main>
+    <!-- 인트로 섹션 -->
+    <section class="hero" id="intro">
+      <div class="terminal" id="terminal">
+        <div class="terminal-line" id="tline1"></div>
+        <div class="terminal-line" id="tline2"></div>
+        <div class="terminal-line" id="tline3"></div>
+        <div class="terminal-line" id="tline4"></div>
+        <div class="terminal-line" id="tline5"></div>
+      </div>
+      <h1 class="hero-name">안녕하세요, <span class="accent">박찬희</span>입니다</h1>
+      <div class="hero-role">EMBEDDED SYSTEMS ENGINEER</div>
+      <p class="hero-tagline">
+        센서가 읽어들인 값이 실제 움직임으로 이어지는 과정에 관심이 많습니다. 3D 비전으로 물체를 인식하고, MCU 펌웨어로 액추에이터를 제어하고, 여러 보드를 하나의 시스템으로 엮는 일을 주로 해왔습니다.
+      </p>
+    </section>
+
+    <!-- 기술 스택 섹션 -->
+    <section id="skills" class="section-alt reveal">
+      <div class="sec-head">
+        <span class="sec-addr">0x01</span>
+        <div>
+          <div class="sec-title">보유 기술</div>
+          <div class="sec-title-en">Tech Stack</div>
+        </div>
+      </div>
+
+      <div class="skill-grid">
+        <div class="skill-card">
+          <div class="skill-card-title">Programming Languages</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">C/C++</span>
+            <span class="skill-tag">Arduino C</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-title">Framework / Library</div>
+          <div class="skill-tags">
+            <span class="skill-tag">OpenCV</span>
+            <span class="skill-tag">OpenNI2</span>
+            <span class="skill-tag">PyTorch</span>
+            <span class="skill-tag">YOLOv5</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-title">Server</div>
+          <div class="skill-tags">
+            <span class="skill-tag">MQTT</span>
+            <span class="skill-tag">Node-RED</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-title">Tooling / DevOps</div>
+          <div class="skill-tags">
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">STM32CubeIDE</span>
+            <span class="skill-tag">Arduino IDE</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-title">Environment</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Raspberry Pi OS</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-title">ETC</div>
+          <div class="skill-tags">
+            <span class="skill-tag">STM32</span>
+            <span class="skill-tag">Arduino</span>
+            <span class="skill-tag">Orbbec Astra 3D Depth Camera</span>
+            <span class="skill-tag">UART Serial Communication</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 프로젝트 인덱스 섹션 -->
+    <section id="projects" class="reveal">
+      <div class="sec-head">
+        <span class="sec-addr">0x02</span>
+        <div>
+          <div class="sec-title">프로젝트 목록</div>
+          <div class="sec-title-en">Project Index</div>
+        </div>
+      </div>
+
+      <div class="project-list">
+        <div class="project-row" onclick="document.getElementById('proj-tomato').scrollIntoView({behavior:'smooth'})" style="cursor: pointer;">
+          <div>
+            <div class="project-name">방울토마토 자동 수확 로봇 시스템</div>
+            <div class="project-desc">YOLOv5와 RGB-D 카메라로 토마토를 인식하고, MCU 여러 대를 UART로 엮어 로봇팔까지 움직이는 시스템</div>
+          </div>
+          <div class="project-meta">
+            <div class="project-period">2025.03 - 2025.12</div>
+            <div class="project-role">비전 시스템 / 로봇팔 제어</div>
+          </div>
+        </div>
+
+        <div class="project-row" onclick="document.getElementById('proj-lidar').scrollIntoView({behavior:'smooth'})" style="cursor: pointer;">
+          <div>
+            <div class="project-name">LiDAR 기반 자율주행 격자 지도 생성 시스템</div>
+            <div class="project-desc">제한된 MCU 자원 안에서 돌아가는 A* 경로탐색과, 라이다 데이터로 만드는 실시간 격자 지도</div>
+          </div>
+          <div class="project-meta">
+            <div class="project-period">2024.12 - 2026.02</div>
+            <div class="project-role">시스템 제어 팀장</div>
+          </div>
+        </div>
+
+        <div class="project-row" onclick="document.getElementById('proj-doghouse').scrollIntoView({behavior:'smooth'})" style="cursor: pointer;">
+          <div>
+            <div class="project-name">스마트 강아지집 제어 시스템</div>
+            <div class="project-desc">아두이노로 온도를 감지해 팬과 급식·급수를 자동으로 제어하고, 블루투스로 상태를 확인하는 보드</div>
+          </div>
+          <div class="project-meta">
+            <div class="project-period">2026.03 - 2026.06</div>
+            <div class="project-role">하드웨어 제어 / 펌웨어</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 프로젝트 1: 자동 수확 로봇 -->
+    <section id="proj-tomato" class="section-alt reveal">
+      <div class="sec-head">
+        <span class="sec-addr">0x03</span>
+        <div>
+          <div class="sec-title">방울토마토 자동 수확 로봇 시스템</div>
+          <div class="sec-title-en">Project 01 — Overview &amp; Full Architecture</div>
+        </div>
+      </div>
+      
+      <!-- 개요 카드 -->
+      <div class="detail-card" style="margin-bottom: 24px;">
+        <div class="detail-grid">
+          <div><div class="detail-label">수행 기간</div><div class="detail-value">2025.03 - 2025.12 (캡스톤 디자인)</div></div>
+          <div><div class="detail-label">주요 플랫폼</div><div class="detail-value">Raspberry Pi 5, STM32, Arduino Mega</div></div>
+          <div><div class="detail-label">사용 기술</div><div class="detail-value">YOLOv5, RGB-D Camera, UART Serial</div></div>
+        </div>
+        <p class="detail-body">
+          3D 카메라로 토마토 위치를 찾고, 그 좌표를 라즈베리파이에서 계산해서 하위 MCU(STM32, 아두이노)로 넘겨 로봇팔이 실제로 수확 동작을 하게 만드는 프로젝트입니다. 비전 처리와 여러 보드 간 통신을 엮는 과정에서 생기는 자잘한 문제들을 하나씩 풀어가는 게 이 프로젝트의 핵심이었습니다.
+        </p>
+      </div>
+
+      <!-- 담당 역할 카드 -->
+      <div class="detail-card" style="margin-bottom: 24px;">
+        <div class="detail-label" style="color: var(--copper-bright);">담당 역할 (Responsibilities)</div>
+        <ul class="role-list">
+          <li><span class="role-marker">→</span> <strong>3D 비전 및 로봇팔 제어 (메인 담당)</strong>: Orbbec Astra 3D 뎁스 카메라로 X, Y, Z 좌표를 뽑아내고, 아두이노 메가로 로봇팔의 수확 궤적을 계산·제어하는 부분을 맡았습니다.</li>
+          <li><span class="role-marker">→</span> <strong>센서 데이터 안정화</strong>: 환경 노이즈로 뎁스 값이 흔들리는 문제가 있어서, 중간값 필터(Median Filter)를 적용해 해결했습니다.</li>
+          <li><span class="role-marker">→</span> <strong>멀티 MCU 통신 구조 설계</strong>: 라즈베리파이 5에서 계산한 좌표와 상태 값을 STM32, 아두이노로 지연 없이 넘기는 UART 통신 체계를 만들었습니다.</li>
+          <li><span class="role-marker">→</span> <strong>주행팀과의 협업</strong>: 비전에서 타겟을 인식하면 STM32 쪽 모터가 바로 정지하도록, 주행 담당 팀원과 신호 규격을 맞추고 통합 테스트를 함께 진행했습니다.</li>
+        </ul>
+      </div>
+
+      <!-- 아키텍처 다이어그램 카드 -->
+      <div class="detail-card" style="margin-bottom: 24px;">
+        <div class="detail-label" style="color: var(--copper-bright); margin-bottom: 16px;">SYSTEM ARCHITECTURE</div>
+        <div class="diagram-wrap">
+          <svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" fill="none">
+            <!-- 그룹 경계 박스 및 라벨 -->
+            <rect x="160" y="10" width="440" height="195" rx="3" stroke="#2A2A2A" stroke-width="1" stroke-dasharray="2 2"/>
+            <text x="170" y="25" font-family="JetBrains Mono" font-size="11" fill="#6A6A6A">3D camera</text>
+            
+            <rect x="25" y="230" width="275" height="180" rx="3" stroke="#2A2A2A" stroke-width="1" stroke-dasharray="2 2"/>
+            <text x="35" y="245" font-family="JetBrains Mono" font-size="11" fill="#6A6A6A">Robot Drive</text>
+            
+            <rect x="460" y="235" width="290" height="175" rx="3" stroke="#2A2A2A" stroke-width="1" stroke-dasharray="2 2"/>
+            <text x="470" y="250" font-family="JetBrains Mono" font-size="11" fill="#6A6A6A">Robot arm</text>
+            
+            <!-- 블록 노드 -->
+            <rect x="305" y="30" width="130" height="36" rx="2" fill="#161616" stroke="#2A2A2A" stroke-width="1"/>
+            <text x="370" y="52" text-anchor="middle" font-family="Noto Sans KR" font-size="11" fill="#EDEDED">3D Camera</text>
+            
+            <rect x="305" y="110" width="130" height="36" rx="2" fill="#161616" stroke="#2A2A2A" stroke-width="1"/>
+            <text x="370" y="132" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#EDEDED">YOLOv5</text>
+            
+            <rect x="55" y="270" width="120" height="36" rx="2" fill="#161616" stroke="#2A2A2A" stroke-width="1"/>
+            <text x="115" y="292" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#EDEDED">STM32</text>
+            
+            <rect x="55" y="355" width="120" height="36" rx="2" fill="#161616" stroke="#2A2A2A" stroke-width="1"/>
+            <text x="115" y="377" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#EDEDED">DC Motor</text>
+            
+            <rect x="490" y="275" width="110" height="36" rx="2" fill="#161616" stroke="#2A2A2A" stroke-width="1"/>
+            <text x="545" y="297" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#EDEDED">Arduino</text>
+            
+            <rect x="630" y="275" width="100" height="36" rx="2" fill="#161616" stroke="#2A2A2A" stroke-width="1"/>
+            <text x="680" y="297" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#EDEDED">Robot arm</text>
+            
+            <rect x="630" y="355" width="100" height="36" rx="2" fill="#161616" stroke="#2A2A2A" stroke-width="1"/>
+            <text x="680" y="377" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#EDEDED">Target</text>
+            
+            <rect x="300" y="260" width="140" height="46" rx="3" fill="#1D1D1D" stroke="#B0987C" stroke-width="1.5"/>
+            <text x="370" y="287" text-anchor="middle" font-family="JetBrains Mono" font-size="12" font-weight="700" fill="#D9C7A8">Raspberry Pi 5</text>
+            
+            <!-- 연결선 및 흐름 제어 라벨 -->
+            <path d="M370 66 L370 110" stroke="#EDEDED" stroke-width="1.2"/>
+            <polygon points="370,110 367,104 373,104" fill="#EDEDED"/>
+            <text x="376" y="90" font-family="JetBrains Mono" font-size="10" fill="#A8A8A8">RGB+depth 스트림</text>
+            
+            <path d="M305 48 L250 48 L250 283 L300 283" stroke="#B5766B" stroke-width="1.2"/>
+            <polygon points="300,283 294,280 294,286" fill="#B5766B"/>
+            <text x="195" y="105" text-anchor="middle" font-family="Noto Sans KR" font-size="9" fill="#A8A8A8">객체 거리 값 z</text>
+            
+            <path d="M370 146 L370 260" stroke="#B5766B" stroke-width="1.2"/>
+            <polygon points="370,260 367,254 373,254" fill="#B5766B"/>
+            <text x="376" y="180" font-family="Noto Sans KR" font-size="9" fill="#A8A8A8">객체 인식 (수확 유/무 판단)</text>
+            <text x="376" y="195" font-family="Noto Sans KR" font-size="9" fill="#A8A8A8">객체의 x,y 좌표</text>
+            
+            <path d="M390 260 L390 220 L535 220 L535 48 L435 48" stroke="#B5766B" stroke-width="1.2"/>
+            <polygon points="435,48 441,51 441,45" fill="#B5766B"/>
+            <text x="485" y="38" text-anchor="middle" font-family="Noto Sans KR" font-size="9" fill="#A8A8A8">객체의 x,y 좌표</text>
+            
+            <path d="M300 275 L175 275" stroke="#8FA88F" stroke-width="1.2"/>
+            <polygon points="175,275 181,272 181,278" fill="#8FA88F"/>
+            <text x="230" y="267" text-anchor="middle" font-family="Noto Sans KR" font-size="9" fill="#8FA88F">객체가 인식됨</text>
+            
+            <path d="M115 306 L115 355" stroke="#8FA88F" stroke-width="1.2"/>
+            <polygon points="115,355 112,349 118,349" fill="#8FA88F"/>
+            <text x="121" y="330" font-family="Noto Sans KR" font-size="9" fill="#8FA88F">정지 신호 (PWM)</text>
+            
+            <path d="M440 283 L490 283" stroke="#EDEDED" stroke-width="1.2"/>
+            <polygon points="490,283 484,280 484,286" fill="#EDEDED"/>
+            
+            <path d="M600 293 L630 293" stroke="#EDEDED" stroke-width="1.2"/>
+            <polygon points="630,293 624,290 624,296" fill="#EDEDED"/>
+            <text x="540" y="265" text-anchor="middle" font-family="Noto Sans KR" font-size="9" fill="#A8A8A8">계산된 역기구학 값</text>
+            
+            <path d="M680 311 L680 355" stroke="#8FA88F" stroke-width="1.5"/>
+            <polygon points="680,355 677,349 683,349" fill="#8FA88F"/>
+            <text x="686" y="336" font-family="Noto Sans KR" font-size="9" fill="#8FA88F">로봇팔 동작</text>
+            
+            <path d="M545 311 L545 435 L10 435 L10 288 L55 288" stroke="#D9C7A8" stroke-width="1.2" stroke-dasharray="3 2"/>
+            <polygon points="55,288 49,285 49,291" fill="#D9C7A8"/>
+            <text x="325" y="428" text-anchor="middle" font-family="Noto Sans KR" font-size="9" fill="#D9C7A8">동작 완료 피드백 신호 (DC Motor 재구동 명령)</text>
+          </svg>
+        </div>
+      </div>
+
+      <!-- 주요 기능 카드 -->
+      <div class="detail-card" style="margin-bottom: 24px;">
+        <div class="detail-label" style="color: var(--copper-bright); margin-bottom: 12px;">주요 기능 (Key Features)</div>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-num">FEAT_01</div>
+            <div class="feature-title">실시간 객체 탐지</div>
+            <div class="feature-desc">YOLOv5와 OpenCV로 방울토마토를 실시간으로 감지하고 바운딩 박스를 그립니다.</div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-num">FEAT_02</div>
+            <div class="feature-title">3차원 좌표 매핑</div>
+            <div class="feature-desc">RGB-D 카메라의 깊이 데이터를 이용해 탐지된 타겟의 실제 3차원 좌표(X, Y, Z)를 계산합니다.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 디버그 로그 블록 -->
+      <div class="log-block" style="margin-bottom: 24px;">
+        <div class="sec-title" style="font-size: 14px; color: var(--silk); margin-bottom: 16px; font-family: var(--font-mono);">
+          [DEBUG_LOG_SET: 방울토마토 수확 시스템 검증 및 최적화]
+        </div>
+        
+        <!-- ISSUE 01 -->
+        <div style="margin-bottom: 18px; padding-bottom: 14px; border-bottom: 1px dashed var(--trace);">
+          <span class="log-tag error">ISSUE_01</span> 
+          <span style="font-family: var(--font-mono); font-size: 11px; color: var(--muted);">[RGB-D 카메라 토마토 인식 정확도 검증]</span>
+          <div class="log-title" style="margin-top: 4px;">조도가 바뀌면 덜 익은 토마토까지 같이 인식되는 문제</div>
+          <div class="log-body">야외 조명이나 날씨에 따라 색이 미묘하게 달라지다 보니, 잘 익은 토마토뿐 아니라 아직 덜 익은 것까지 타겟으로 잡히는 경우가 있었습니다.</div>
+          <span class="log-tag fix" style="margin-top: 8px;">RESOLVE</span>
+          <div class="log-body">여러 조도 환경에서 데이터를 더 모아 <strong>YOLOv5를 추가로 학습</strong>시켰습니다. 이후로는 조명이 바뀌어도 잘 익은 토마토만 안정적으로 구분해냈습니다.</div>
+        </div>
+
+        <!-- ISSUE 02 -->
+        <div style="margin-bottom: 18px; padding-bottom: 14px; border-bottom: 1px dashed var(--trace);">
+          <span class="log-tag error">ISSUE_02</span> 
+          <span style="font-family: var(--font-mono); font-size: 11px; color: var(--muted);">[로봇 주행 후 정지 타이밍 검증 (STM32)]</span>
+          <div class="log-title" style="margin-top: 4px;">정지 신호를 받고도 로봇이 밀려서 멈추는 문제</div>
+          <div class="log-body">라즈베리파이가 UART로 정지 명령을 보내도 STM32의 감속 응답이 살짝 늦고, 관성 때문에 바퀴가 밀리면서 목표 지점을 넘어서는 경우가 있었습니다.</div>
+          <span class="log-tag fix" style="margin-top: 8px;">RESOLVE</span>
+          <div class="log-body">주행 담당 팀원과 함께 <strong>STM32의 정지 인터럽트 조건을 더 민감하게 조정</strong>하고, 속도 자체를 낮춰 관성의 영향을 줄였습니다. 이후로는 인식된 위치에서 오차 없이 멈추게 됐습니다.</div>
+        </div>
+
+        <!-- ISSUE 03 -->
+        <div style="margin-bottom: 18px; padding-bottom: 14px; border-bottom: 1px dashed var(--trace);">
+          <span class="log-tag error">ISSUE_03</span> 
+          <span style="font-family: var(--font-mono); font-size: 11px; color: var(--muted);">[로봇팔 수확 동작 (역기구학) 정확도 검증]</span>
+          <div class="log-title" style="margin-top: 4px;">손목 각도가 조금씩 어긋나 토마토 중심을 못 잡는 문제</div>
+          <div class="log-body">좌표를 받아 역기구학으로 계산한 궤적대로 팔을 뻗어도, 링키지의 조립 공차나 서보 특성 때문에 손목 각도가 미세하게 어긋나 중심을 정확히 못 잡는 경우가 있었습니다.</div>
+          <span class="log-tag fix" style="margin-top: 8px;">RESOLVE</span>
+          <div class="log-body">각 관절에 <strong>오프셋 보정값을 넣어 이 오차를 소프트웨어적으로 상쇄</strong>했습니다. 반복 테스트를 거치며 값을 조금씩 다듬었더니 수확 성공률이 눈에 띄게 올라갔습니다.</div>
+        </div>
+
+        <!-- ISSUE 04 -->
+        <div>
+          <span class="log-tag error">ISSUE_04</span> 
+          <span style="font-family: var(--font-mono); font-size: 11px; color: var(--muted);">[3D 좌표계 기준 정의 및 중심 좌표 계산 정확도 검증]</span>
+          <div class="log-title" style="margin-top: 4px;">좌표계 기준이 애매해서 중심 좌표가 자꾸 어긋나는 문제</div>
+          <div class="log-body">처음에는 월드 좌표계와 카메라 픽셀 평면을 어떻게 맞출지 기준이 명확하지 않아서, 토마토 중심의 실제 좌표(X, Y, Z)를 계산할 때마다 값이 조금씩 어긋났습니다.</div>
+          <span class="log-tag fix" style="margin-top: 8px;">RESOLVE</span>
+          <div class="log-body">화면 중앙 픽셀을 <strong>(0,0) 기준점으로 다시 정의</strong>하고, <strong>카메라를 로봇팔 그리퍼 위로 옮겨 달아서(Eye-in-Hand)</strong> 시차 문제 자체를 줄였습니다. 이 두 가지를 같이 적용하고 나서야 좌표 값이 안정적으로 나왔습니다.</div>
+        </div>
+      </div>
+
+      <!-- 구동 시연 영상 -->
+      <div class="detail-card">
+        <div class="detail-label" style="color: var(--copper-bright); margin-bottom: 12px;">구동 시연 영상 (System Demonstration)</div>
+        <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #161616; border: 1px solid var(--trace); border-radius: 2px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+          <video controls autoplay muted playsinline preload="auto" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain;">
+            <source src="portfolio-demo.mp4" type="video/mp4">
+            브라우저가 비디오 태그를 지원하지 않습니다.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- 프로젝트 2: LiDAR 자율주행 -->
+    <section id="proj-lidar" class="reveal">
+      <div class="sec-head">
+        <span class="sec-addr">0x04</span>
+        <div>
+          <div class="sec-title">LiDAR 기반 자율주행 격자 지도 생성 시스템</div>
+          <div class="sec-title-en">Project 02 — Technical Log</div>
+        </div>
+      </div>
+      
+      <div class="detail-card" style="margin-bottom: 24px;">
+        <div class="detail-grid">
+          <div><div class="detail-label">수행 기간</div><div class="detail-value">2024.12 - 2026.02 (동아리 프로젝트)</div></div>
+          <div><div class="detail-label">주요 플랫폼</div><div class="detail-value">STM32F407VET6, HC-05 Bluetooth Module</div></div>
+          <div><div class="detail-label">사용 기술</div><div class="detail-value">LiDAR Sensor, A* Algorithm, Timer PWM, TFT LCD</div></div>
+        </div>
+        <p class="detail-body">
+          라이다 센서로 주변을 스캔해 격자 지도를 만들고, 그 위에서 A* 알고리즘으로 최단 경로를 찾아 움직이는 자율주행 플랫폼입니다. 메모리와 연산 자원이 넉넉하지 않은 MCU 환경에서 이 알고리즘을 돌아가게 만드는 게 관건이었습니다.
+        </p>
+      </div>
+
+      <div class="detail-card" style="margin-bottom: 24px;">
+        <div class="detail-label" style="color: var(--copper-bright);">담당 역할 (Responsibilities)</div>
+        <ul class="role-list">
+          <li><span class="role-marker">→</span> <strong>시스템 제어팀 팀장</strong>: STM32F407VET6와 HC-05로 휴대폰-보드 간 블루투스 통신을 구축하고, DC 모터 4개를 제어하면서 속도와 엔코더 값을 휴대폰 화면에 실시간으로 띄웠습니다.</li>
+          <li><span class="role-marker">→</span> <strong>A* 알고리즘 구현</strong>: 방학 동안 A*를 공부해서 TFT LCD에 70×70 격자 지도를 구성하고, 랜덤 미로에서 (1,1)부터 (69,69)까지 최단 경로를 찾는 로직을 직접 구현했습니다.</li>
+          <li><span class="role-marker">→</span> <strong>라이다 기반 격자 지도 생성</strong>: 센서팀에서 받은 2D 라이다 데이터를 확률 기반 격자 지도(Occupancy Grid Map)로 변환하는 로직을 만들었습니다.</li>
+        </ul>
+      </div>
+
+      <div class="detail-card" style="margin-bottom: 24px;">
+        <div class="detail-label" style="color: var(--copper-bright); margin-bottom: 12px;">주요 기능 (Key Features)</div>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-num">FEAT_01</div>
+            <div class="feature-title">A* 경로 탐색</div>
+            <div class="feature-desc">메모리 사용량을 줄인 최적화 버전으로 구현해, 랜덤 미로와 실측 맵 모두에서 최단 경로 탐색을 검증했습니다.</div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-num">FEAT_02</div>
+            <div class="feature-title">Timer PWM 제어</div>
+            <div class="feature-desc">하드웨어 타이머로 4개 DC 모터를 안정적으로 제어하고, 속도·엔코더 값을 무선으로 모니터링했습니다.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="log-block">
+        <span class="log-tag error">ISSUE [LiDAR 수집 데이터 왜곡]</span>
+        <div class="log-title">라이다 버퍼가 밀려서 이상한 값이 튀는 문제</div>
+        <div class="log-body">STM32가 UART로 라이다의 고속 데이터를 받는 도중에 연산 주기가 살짝 밀리면서 수신 버퍼가 넘치는 경우가 있었습니다. 그럴 때마다 말도 안 되게 먼 거리값이 섞여 들어와서 격자 지도에 이상한 노이즈가 생겼습니다.</div>
+        <span class="log-tag fix" style="margin-top: 12px;">RESOLVE</span>
+        <div class="log-body">PC와 보드를 시리얼로 연결해서 원본 데이터를 그대로 찍어보며 어느 시점에 문제가 생기는지 추적했습니다. 특정 구간에서 버퍼가 제대로 비워지지 않는다는 걸 확인한 뒤, <strong>범위를 벗어난 값은 걸러내고 그 자리를 앞뒤 프레임 값의 평균으로 채워 넣는 필터</strong>를 추가했습니다. 이후로는 지도에 튀는 값 없이 깔끔하게 나왔습니다.</div>
+      </div>
+    </section>
+
+    <!-- 프로젝트 3: 스마트 강아지집 -->
+    <section id="proj-doghouse" class="section-alt reveal">
+      <div class="sec-head">
+        <span class="sec-addr">0x05</span>
+        <div>
+          <div class="sec-title">스마트 강아지집 제어 시스템</div>
+          <div class="sec-title-en">Project 03 — Technical Log</div>
+        </div>
+      </div>
+      
+      <div class="detail-card" style="margin-bottom: 24px;">
+        <div class="detail-grid">
+          <div><div class="detail-label">수행 기간</div><div class="detail-value">2026.03 - 2026.06 (수업 과제)</div></div>
+          <div><div class="detail-label">주요 플랫폼</div><div class="detail-value">Arduino (ATmega2560 기반)</div></div>
+          <div><div class="detail-label">사용 기술</div><div class="detail-value">LM35 Temperature Sensor, Servo Motors, Bluetooth</div></div>
+        </div>
+        <p class="detail-body">
+          온도 변화에 따라 반려동물의 생활 환경을 관리하는 아두이노 기반 제어 보드입니다. 센서 입력, 액추에이터 구동, 무선 통신을 처음부터 끝까지 직접 엮어보며 임베디드 기본기를 다지려고 진행한 수업 과제였습니다.
+        </p>
+      </div>
+
+      <div class="detail-card" style="margin-bottom: 24px;">
+        <div class="detail-label" style="color: var(--copper-bright);">담당 역할 (Responsibilities)</div>
+        <ul class="role-list">
+          <li><span class="role-marker">→</span> <strong>하드웨어 제어 및 펌웨어 구현 (메인)</strong>: 온도 센서 입력, 블루투스 통신, 자동 급식·급수용 서보 제어까지 메인 로직을 맡았습니다.</li>
+          <li><span class="role-marker">→</span> <strong>센서 값 안정화</strong>: 온도 값이 노이즈로 흔들리는 문제를 막기 위한 필터링과 예외 처리를 넣었습니다.</li>
+        </ul>
+      </div>
+
+      <div class="detail-card" style="margin-bottom: 24px;">
+        <div class="detail-label" style="color: var(--copper-bright); margin-bottom: 12px;">주요 기능 (Key Features)</div>
+        <div class="feature-grid">
+          <div class="feature-card"><div class="feature-num">FEAT_01</div><div class="feature-title">자동 온도 제어</div><div class="feature-desc">온도 센서 값을 상시 확인하다가 설정한 임계치를 넘으면 팬을 자동으로 구동합니다.</div></div>
+          <div class="feature-card"><div class="feature-num">FEAT_02</div><div class="feature-title">무선 상태 확인</div><div class="feature-desc">블루투스 모듈을 통해 모바일 앱에서 실시간 온도와 팬 동작 상태를 확인할 수 있습니다.</div></div>
+        </div>
+      </div>
+
+      <div class="log-block">
+        <span class="log-tag error">ISSUE [스마트 강아지집]</span>
+        <div class="log-title">온도 경계값 근처에서 팬이 껐다 켰다를 반복하는 문제</div>
+        <div class="log-body">온도가 기준값 부근에 머무를 때 팬이 짧은 주기로 켜졌다 꺼지는 현상이 있었습니다. 팬이 꺼지자마자 온도가 다시 살짝 오르면서 곧바로 재작동 조건을 만족해버렸고, 이 상태가 계속되면 모터에 부담이 갈 수 있는 문제였습니다.</div>
+        <span class="log-tag fix" style="margin-top: 12px;">RESOLVE</span>
+        <div class="log-body">기준값을 하나로만 두면 이런 문제가 생긴다는 걸 확인하고, LM35 센서 자체가 1℃당 10mV라는 작은 전압 차로 온도를 표현해 노이즈에 약하다는 점도 함께 고려했습니다. 그래서 켜지는 온도(28.0℃)와 꺼지는 온도(26.0℃)를 다르게 두는 <strong>히스테리시스(Hysteresis) 제어</strong>로 바꿨습니다. 2.0℃ 정도 여유를 두니 팬이 반복적으로 켜졌다 꺼지는 현상이 사라졌습니다.</div>
+      </div>
+    </section>
+
+    <!-- 배운 점 섹션 -->
+    <section id="learned" class="reveal">
+      <div class="sec-head">
+        <span class="sec-addr">0x06</span>
+        <div>
+          <div class="sec-title">배운 점</div>
+          <div class="sec-title-en">Conclusion</div>
+        </div>
+      </div>
+      
+      <div class="detail-card" style="margin-bottom: 24px;">
+        <div class="detail-label" style="color: var(--copper-bright); margin-bottom: 12px;">📌 Capstone Design Project</div>
+        <p class="detail-body" style="margin: 0;">
+          초반에는 "이걸 우리가 정말 해낼 수 있을까" 싶었던 순간도 많았습니다. 그래도 팀원들과 끝까지 붙잡고 늘어진 끝에 결과물을 완성할 수 있었고, 그 과정에서 협업이 왜 중요한지 몸으로 배웠습니다. 문제가 한꺼번에 몰아칠 때는 당황하지 않고 우선순위를 정해 하나씩 풀어나가는 게 결국 제일 빠른 길이라는 것도 알게 됐습니다. 이렇게 완성한 결과물로 교내 캡스톤디자인 경진대회에서 장려상을 받으면서, 그동안의 시행착오가 헛되지 않았다는 걸 확인할 수 있었습니다.
+        </p>
+      </div>
+
+      <div class="detail-card" style="margin-bottom: 24px;">
+        <div class="detail-label" style="color: var(--copper-bright); margin-bottom: 12px;">📌 Club Project (시스템 제어팀 팀장)</div>
+        <p class="detail-body" style="margin: 0;">
+          시스템 제어팀 팀장을 맡으면서, 팀원들이 겪는 어려움을 먼저 듣고 각자에게 맞는 방식으로 소통하려고 노력했습니다. 다른 팀들과 계속 맞춰가면서, 목표가 같아도 팀마다 일하는 방식이 다를 수 있다는 걸 배웠고 그걸 조율하는 법도 배웠습니다.
+        </p>
+      </div>
+
+      <div class="detail-card" style="margin-bottom: 24px;">
+        <div class="detail-label" style="color: var(--copper-bright); margin-bottom: 12px;">📌 Major Assignment Project</div>
+        <p class="detail-body" style="margin: 0;">
+          규모는 작았지만, 센서를 직접 연결하고 하드웨어를 하나하나 제어해보면서 임베디드 시스템의 기본기를 탄탄히 다질 수 있었던 프로젝트였습니다.
+        </p>
+      </div>
+
+      <div class="learned-quote">
+        "그것이 불가능하다고 믿는 사람들보다, 그것을 가능하게 만들려고 시도하는 사람들의 목소리가 더 가치 있다." <br>
+        <span style="font-size: 11px; opacity: 0.6; font-family: var(--font-mono); margin-top: 6px; display: block;">— George Bernard Shaw</span>
+      </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer>
+      <span>© 2026 EMBEDDED SYSTEMS ENGINEER · PORTFOLIO</span>
+      <span>BUILD 0X04 · SEOUL, KR</span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
